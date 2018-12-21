@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC7D284121CD086200583106 /* UserInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D284021CD086200583106 /* UserInputs.swift */; };
+		CC7D284421CD2F0200583106 /* TextField+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D284321CD2F0200583106 /* TextField+Label.swift */; };
 		CC9EEC4D21C7C0BF00F81325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EEC4C21C7C0BF00F81325 /* AppDelegate.swift */; };
 		CC9EEC4F21C7C0BF00F81325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EEC4E21C7C0BF00F81325 /* ViewController.swift */; };
 		CC9EEC5221C7C0BF00F81325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9EEC5021C7C0BF00F81325 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC7D284021CD086200583106 /* UserInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputs.swift; sourceTree = "<group>"; };
+		CC7D284321CD2F0200583106 /* TextField+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Label.swift"; sourceTree = "<group>"; };
 		CC9EEC4921C7C0BF00F81325 /* CardFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9EEC4C21C7C0BF00F81325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC9EEC4E21C7C0BF00F81325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7D284221CD2EE300583106 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC7D284321CD2F0200583106 /* TextField+Label.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CC9EEC4021C7C0BF00F81325 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +107,13 @@
 		CC9EEC4B21C7C0BF00F81325 /* CardFlip */ = {
 			isa = PBXGroup;
 			children = (
+				CC7D284221CD2EE300583106 /* Extensions */,
 				CC9EEC4C21C7C0BF00F81325 /* AppDelegate.swift */,
 				CC9EEC4E21C7C0BF00F81325 /* ViewController.swift */,
 				CC9EEC5021C7C0BF00F81325 /* Main.storyboard */,
 				CC9EEC5321C7C0C400F81325 /* Assets.xcassets */,
 				CC9EEC5521C7C0C400F81325 /* LaunchScreen.storyboard */,
 				CC9EEC5821C7C0C400F81325 /* Info.plist */,
-				CC7D284021CD086200583106 /* UserInputs.swift */,
 			);
 			path = CardFlip;
 			sourceTree = "<group>";
@@ -259,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7D284421CD2F0200583106 /* TextField+Label.swift in Sources */,
 				CC9EEC4F21C7C0BF00F81325 /* ViewController.swift in Sources */,
 				CC9EEC4D21C7C0BF00F81325 /* AppDelegate.swift in Sources */,
-				CC7D284121CD086200583106 /* UserInputs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

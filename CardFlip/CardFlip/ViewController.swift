@@ -37,8 +37,6 @@ class ViewController: UIViewController {
         nameTextField.delegate = self
         
         hideBackLabel(true)
-       
-        
     }
     
     override func viewWillLayoutSubviews() {
@@ -64,7 +62,6 @@ class ViewController: UIViewController {
         let circleMaskPathInitial = UIBezierPath(ovalIn: CGRect(x: 0, y: -radius, width: 1, height: card.bounds.height))
         let circleMaskPathFinal = UIBezierPath(ovalIn: card.frame.insetBy(dx: -radius, dy: -radius))
         
-        
         let maskLayer = CAShapeLayer()
         maskLayer.path = circleMaskPathFinal.cgPath
         card.layer.mask = maskLayer
@@ -77,6 +74,7 @@ class ViewController: UIViewController {
         maskLayer.add(maskLayerAnimation, forKey: "path")
         hasUpdatedCard = true
     }
+    
     @objc func flip() {
         let transitionOptions: UIView.AnimationOptions = self.showingBack ? [.transitionFlipFromLeft] : [.transitionFlipFromRight]
         UIView.transition(with: card, duration: 1.0, options: transitionOptions, animations: nil, completion: { _ in
@@ -141,11 +139,9 @@ extension ViewController: UITextFieldDelegate {
                 hideBackLabel(self.showingBack)
                 flip()
             }
-            
-            
         }
-       
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let  char = string.cString(using: String.Encoding.utf8)!
         let isBackSpace = (strcmp(char, "\\b") == -92)
@@ -159,6 +155,4 @@ extension ViewController: UITextFieldDelegate {
         }
         return true
     }
-    
-    
 }
